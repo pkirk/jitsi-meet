@@ -28,6 +28,7 @@ import VideoBackgroundButton from '../virtual-background/components/VideoBackgro
 import WhiteboardButton from '../whiteboard/components/web/WhiteboardButton';
 import { isWhiteboardVisible } from '../whiteboard/functions';
 
+import GoLiveButton from './../visitors/components/GoLiveButton';
 import DownloadButton from './components/DownloadButton';
 import HelpButton from './components/HelpButton';
 import AudioSettingsButton from './components/web/AudioSettingsButton';
@@ -296,6 +297,12 @@ export function getAllToolboxButtons(_customToolbarButtons?: {
         group: 2
     };
 
+    const golive = {
+        key: 'golive',
+        Content: GoLiveButton,
+        group: 2
+    };
+
     const recording = {
         key: 'recording',
         Content: RecordButton,
@@ -423,6 +430,7 @@ export function getAllToolboxButtons(_customToolbarButtons?: {
         fullscreen,
         security,
         cc,
+        golive,
         recording,
         livestreaming,
         linkToSalesforce,

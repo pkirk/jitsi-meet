@@ -66,6 +66,7 @@ export const TOOLBAR_BUTTONS: ToolbarButton[] = [
     'feedback',
     'filmstrip',
     'fullscreen',
+    'golive',
     'hangup',
     'help',
     'highlight',
